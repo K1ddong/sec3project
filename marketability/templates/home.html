@@ -1,0 +1,27 @@
+<html>
+    <body bgcolor=#F5F5DC>
+
+        <center>
+
+            <h3> 말레이시아 이커머스 시장(쇼피) 기준 </h3>
+        <h1> 밥솥 제품 시장성 예측 </h1><br>
+        
+        <h4> ※판매하고자 하는 밥솥 제품의 스펙을 아래 양식에 맞춰 기입하세요<br>(해당하는 바가 없으면 0으로 기재) </h4>
+        <h4> ※가격, 할인율, 무게, 용량,소모 전력은 숫자만 기재<br> (예: 할인율: 40, 무게: 1000, 용량: 2, 소모 전력: 200) </h4>
+        <h6> ※RM -> 말레이시아 링깃 </h6>
+
+        <form method="POST", action="{{url_for('home')}}">
+           <b> 최저가(RM) :  <input type="text", name='a', placeholder="enter 1"> <br><br>
+            할인율(%) :  <input type="text", name='b', placeholder="enter 2"> <br><br>
+            밥솥 무게(g) :  <input type="text", name='c', placeholder="enter 3"> <br><br>
+            무상A/S 기간(month) :  <input type="text", name='c', placeholder="enter 3"> <br><br>
+            용량(L) :  <input type="text", name='c', placeholder="enter 3"> <br><br>
+            재고량 : <input type="text", name='d', placeholder="enter 4"> <br><br>
+            소모 전력(W) :  <input type="text", name='c', placeholder="enter 3"> <br><br><br></b>
+            <input type="submit" , value='predict!' >
+        </form>
+        
+    </center>
+
+    </body>
+</html>
